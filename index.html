@@ -1,0 +1,26 @@
+<!doctype html>
+<html ng-app="App" >
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <link href="data/style.css" rel="stylesheet">
+    <script src="data/angular-1.2.21.min.js"></script>
+    <script src="data/script.js"></script>
+</head>
+
+<body ng-controller="TwitterCtrl">
+
+    <div ng-if="parsing" class="parsing_message">
+        Parsing json file. Please wait a bit.
+    </div>
+
+    <div class='tweet_block' ng-repeat="t in tweets">
+        <pre class='tweet_text' ng-bind-html="t.text"></pre>
+        <a class='tweet_datetime' href="https://twitter.com/{{ t.login }}/status/{{ t.id }}">source</a>
+    </div>
+
+    <div class='footer'>
+        <a href="https://github.com/rubus-io/rubus_twitter">Source code</a>
+    </div>
+
+</body>
+</html>

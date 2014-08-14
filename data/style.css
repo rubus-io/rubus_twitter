@@ -1,0 +1,32 @@
+.parsing_message {
+    font-family: 'Gotham Narrow SSm', sans-serif, Arial;
+}
+
+.tweet_block {
+    margin: 0.9em 0;
+}
+
+.tweet_text {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gotham Narrow SSm', sans-serif, Arial;
+    word-wrap: break-word;
+    color: black;
+}
+
+.tweet_datetime {
+    font-family: 'Gotham Narrow SSm', sans-serif, Arial;
+    font-size: smaller;
+    color: black;
+}
+
+a:link { color: #0000ee; }
+a:visited { color: #551a8b; }
+a:hover { color: #FF8C00; }
+a:active { color: #FF8C00; }
+
+.footer {
+    font-family: 'Gotham Narrow SSm', sans-serif, Arial;
+    text-align: center;
+    margin-top: 1em;
+}
